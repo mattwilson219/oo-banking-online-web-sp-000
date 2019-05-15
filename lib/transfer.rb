@@ -29,7 +29,7 @@ class Transfer
       if @status == "complete"
         @sender.balance += @amount
         @receiver.balance -= @amount
-        @status = "reversed"
+        @status = "Transaction rejected. Please check your account balance"
       end
     end
   end
