@@ -17,5 +17,9 @@ class BankAccount
     "Your balance is $#{@balance}."
   end
 
+  def valid?
+    @staus == "open" && @balance > 0 ? true : false
+  end
+
 
 end
