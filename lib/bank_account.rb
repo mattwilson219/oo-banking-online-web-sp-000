@@ -25,5 +25,8 @@ class BankAccount
      end
   end
 
+  def close_account
+    @staus = "closed"
+  end
 
 end
